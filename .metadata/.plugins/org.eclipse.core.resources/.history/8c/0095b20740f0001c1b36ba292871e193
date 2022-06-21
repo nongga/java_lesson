@@ -1,0 +1,24 @@
+package koreait.day17;
+
+import java.util.StringTokenizer;
+
+public class C71_StringTokenizer {
+//token :  표식(최소단위)
+	public static void main(String[] args) {
+		
+		String temp = "모모 90 88 79";
+		
+		//토큰화 : StringTokenizer 클래스의 기능 사용
+		StringTokenizer stk = new StringTokenizer(temp);
+		System.out.println("1.nextToken 메소드");
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+			
+		
+		
+		
+	}
+
+}

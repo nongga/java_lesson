@@ -1,0 +1,9 @@
+package koreait.test5;
+
+public abstract class Product {
+	private int price;
+	private String prdName;
+	
+	public abstract String sell(Object obj);
+
+}

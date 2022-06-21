@@ -1,0 +1,11 @@
+package koreait.day12;
+
+//C43번 예제 리스트로 변경하기
+public class C48_MathList {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

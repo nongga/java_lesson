@@ -1,0 +1,6 @@
+package koreait.test;
+
+public class Bike extends Product{
+		int price;
+		
+}

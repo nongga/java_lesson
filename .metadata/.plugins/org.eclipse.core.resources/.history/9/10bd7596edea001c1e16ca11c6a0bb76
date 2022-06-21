@@ -1,0 +1,20 @@
+package koreait.day12;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class C52_MyDictionary {
+
+	public static void main(String[] args) {
+		
+		System.out.println("선택기능 👉 1. 단어저장  2.단어검색  3.단어장보기  4.프로그램 끝내기");
+		System.out.println("선택 ✏️ ->");
+		HashMap<String,String> map = new HashMap<>();
+		map.
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+	}
+
+}

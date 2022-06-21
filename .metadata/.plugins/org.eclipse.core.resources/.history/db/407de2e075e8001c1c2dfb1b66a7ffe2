@@ -1,0 +1,43 @@
+package koreait.day11.test;
+
+
+public class Animal {
+	static final String TYPE="동물";
+	private String name;
+	private String color;
+	
+	public Animal() {
+		System.out.println("새로운 Animal가족이 생겼습니다.");
+	}
+	//추상메소드로 변경
+	public void act() {
+		System.out.println("Animal 행동 : 아직 모름(unknown)");
+	}
+	//또 다른 추상메소드도 만들어보세요
+	public void print() {
+		System.out.println("name:" +name + ",color"+color);
+	}
+	public void year() {
+		System.out.println("year:" + year);
+	}
+	
+	//getter setter
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getYear() {
+		return year;
+	}
+	
+	
+
+}

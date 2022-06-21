@@ -1,0 +1,51 @@
+package koreait.day08;
+//사승철
+
+public class Member {
+
+	
+	private String name;
+	private String email;
+	private int age;
+	private String level;
+	
+	public Member() {
+		System.out.println("name,email,age,level 필드는 기본값입니다.");
+	}
+	Member(String name,String email) {
+		this.name=name;
+		this.email=email;	
+	}
+	
+	
+	
+	void setname(String name) {
+		this.name = name;
+		
+	}
+	String getname() {
+		return name;
+	}
+	void setEmail(String email) {
+		this.email = email;
+		
+	}
+	String getemail() {
+		return email;
+	}
+	void setLevel(int age) {
+		this.age = age;
+		
+	}
+	int getage() {
+		return age;
+	}
+	void setLevel(String level) {
+		this.level = level;
+		
+	}
+	String getlevel() {
+		return level;
+	}
+
+}

@@ -1,0 +1,44 @@
+package koreait.day11.test;
+
+
+public abstract class Animal {
+	private String name;
+	private String color;
+	private int year;
+	
+	public Animal() {
+		System.out.println("새로운 Animal가족이 생겼습니다.");
+	}
+	//추상메소드로 변경
+	public abstract void act();
+	
+	public abstract String eat(Object object);
+	
+	//또 다른 추상메소드도 만들어보세요
+	public void print() {
+		System.out.println("name:" +name + ",color"+color);
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Animal[name=" + name+",color= "+color+"]"; 
+	}
+	
+	//getter setter
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	
+	
+
+}

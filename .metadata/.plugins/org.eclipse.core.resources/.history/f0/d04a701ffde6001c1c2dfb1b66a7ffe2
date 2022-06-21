@@ -1,0 +1,9 @@
+package koreait.day09a;
+
+public class Anima {
+
+	public Anima() {
+		super();
+	}
+
+}

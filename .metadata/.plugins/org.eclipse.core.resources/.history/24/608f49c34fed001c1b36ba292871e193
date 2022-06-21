@@ -1,0 +1,41 @@
+package koreait.day15;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class C68_FileReadTeset2 {
+
+	public static void main(String[] args) {
+		String filename = "/Users/a/Desktop/iclass05/자바테스트.txt";
+		
+		File file = new File(filename);
+		
+		PrintWriter pw = null;
+		try {
+			pw = new PrintWriter(file); 
+			pw.println("모모 90 89 82");
+			pw.println("다현 89 90 82");
+			pw.println("나연 82 89 90");
+			pw.println("미나 99 99 98");
+			System.out.println("파일출력이 완료되었습니다.");	
+		} catch (FileNotFoundException e) {
+			System.out.println("오류 발생 : " + e.getMessage());
+		}finally {
+			pw.close();
+		}
+	      try (Scanner sc = new Scanner(new File("/Users/a/Desktop/iclass05/자바테스트.txt"))) {
+	    	  while(sc.hasNext()) {
+					System.out.println(sc.nextLine());
+	    	  }
+	    	
+	    	  System.out.println("파일읽기가 완료되었습니다.");
+	    	  } catch (FileNotFoundException e) {
+	    		  e.printStackTrace();        
+	    		  }    
+	      }
+	      
+}
+
+	    	 

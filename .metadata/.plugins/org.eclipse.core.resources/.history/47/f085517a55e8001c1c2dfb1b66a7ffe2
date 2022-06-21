@@ -1,0 +1,13 @@
+package koreait.day11;
+
+public class ClassX extends ClassAbs{
+
+	@Override
+	public void test() {
+		System.out.println("ClassX 의 test()");
+		// TODO Auto-generated method stub
+		
+	}
+	//추상클래스 상속받은 자식(하위)클래스는 반드시 추상메소드 재정의해야 합니다.
+
+}

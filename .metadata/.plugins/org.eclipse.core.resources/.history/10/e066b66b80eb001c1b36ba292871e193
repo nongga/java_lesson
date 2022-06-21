@@ -1,0 +1,44 @@
+package koreait.day13;
+
+public class C53_InterfaceTest {
+
+	public static void main(String[] args) {
+		
+		MyClassX x1 = new MyClassX();
+		MyClassY y1 = new MyClassY();
+		MyClassZ z1 = new MyClassZ();
+		
+		InterfaceA x2 = new MyClassX();
+		InterfaceB y2 = new MyClassY();
+		InterfaceA z2 = new MyClassZ();
+		InterfaceB z3 = new MyClassZ();
+		
+		imethod(x2);
+//		imethod(y2);	오루 : InterfaceA 구현체 아님
+		imethod(z2);
+		imethod(x1);
+		imethod(z1);
+		imethod(z2);
+//		imethod(z3);	//오류 : 변수 참조타입이 InterfaceB
+		
+		iBmethod(y1);
+		iBmethod(y2);
+		iBmethod(z1);
+//		iBmethod(z2);	//변수 참조타입이 InterfaceA이면 오류
+		iBmethod(y1);
+		
+
+	}
+	//다형성 구현얘: 메소드 인자타입인 InterfaceA
+	//		InterfaceA 구현체는 모두 인자로 전달가능.
+	public static void imethod(InterfaceA ia) {
+			ia.methodA();
+	}
+	
+	public static void iBmethod(InterfaceB ib) {
+		System.out.println(ib.name("momo"));
+	
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package koreait.day10;
+
+import koreait.day09a.Animal;
+
+public class AnimalTest3 extends Animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package koreait.day14;
+
+public class C60_CharSequence {
+	//CharSequence 인터페이스
+	public static void main(String[] args) {
+		
+		String result = new String();	//result="test" 
+		System.out.println("초기 result : " + result);	//""
+		System.out.println("1. String 타입 테스트");
+		for(int i=2;i<6;i++) {
+			result += i+"/";		//result = result + (i + "/");
+			System.out.println("result : " + result);
+		}
+	
+		
+		
+	}
+	
+}

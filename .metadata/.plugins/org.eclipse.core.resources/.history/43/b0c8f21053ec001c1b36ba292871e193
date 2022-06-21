@@ -1,0 +1,16 @@
+package snippet;
+
+public class Snippet {
+	private int speed;
+	
+	public void bike() {
+		this.prdName = "bike";
+	}
+	
+	@Override
+	public String sell() {
+	
+		return null;
+	}
+}
+

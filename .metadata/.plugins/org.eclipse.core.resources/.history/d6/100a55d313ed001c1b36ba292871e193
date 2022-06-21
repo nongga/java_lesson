@@ -1,0 +1,42 @@
+package koreait.test999;
+//사승철
+public class ProductTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+class Electronics extends Product{
+	
+	private double kwh;
+	
+	public Electronics(int price,String prdName) {
+		this.price =  price;
+		this.prdName = prdName;
+		// TODO Auto-generated constructor stub
+	}
+	public Electronics() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String sell(Object obj) {
+		// TODO Auto-generated method stub
+		return String.format("묶음 상품 -%s(1set)", obj);
+	}
+	public double getKwh() {
+		return kwh;
+	}
+	public void setKwh(double kwh) {
+		this.kwh = kwh;
+	}
+	public void power(double kwh) {
+		double power = kwh;
+		System.out.println(kwh*24);
+
+
+}
+}

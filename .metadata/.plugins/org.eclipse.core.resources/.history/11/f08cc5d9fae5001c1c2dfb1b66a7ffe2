@@ -1,0 +1,10 @@
+package koreait.day08;
+
+public class MyClass1Test {
+
+	//MyClass1 객체생성
+	MyClass1 my= new MyClass1();
+	
+	//MyClass1클래스의 플드중 사용할수 있는것은?
+	my.
+}

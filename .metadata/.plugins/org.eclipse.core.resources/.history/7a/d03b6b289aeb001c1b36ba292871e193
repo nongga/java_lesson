@@ -1,0 +1,22 @@
+package koreait.day13a;
+
+import java.util.Comparator;
+
+import koreait.day12.Member;
+
+public class MemberAgeAscending {
+	
+	//Member객체의 sort : 비교 가능한 값으로 필드중 하나를 선택해서 비교자(Comparator) 구현체 만듭니다.
+public class MemberAgerAscending implements Comparator<Member>{
+	
+	@Override
+	public int compare(Member o1, Member o2) {
+		Integer age1 = o1.getAge();
+		Integer age2 = o2.getAge();
+		
+		return age1.compareTo(age2);	//오름차순: age1<age2일때 -1을 리턴
+	}
+}
+	
+
+}

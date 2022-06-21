@@ -1,0 +1,23 @@
+package koreait.day08b;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGame3Start {
+	public static void main(String[] args) {
+		Random r = new Random();
+		Scanner sc = new Scanner(System.in);
+		int max=10;
+		int[] triallst = new int[max];
+		GameValue[] history = new GameValue[10]; //최대 10개 기록을 저장하기
+		int k=0;
+		
+		System.out.println("숫자 맞추기 게임 시작합니다.");
+		System.out.println("게임을 시작하려면 너 휴먼의 이름을 쓰시오 >>>");
+		String gamer = sc.nextLine();
+		int rmin = 11, rmax = 29;
+		
+		
+	}
+
+}

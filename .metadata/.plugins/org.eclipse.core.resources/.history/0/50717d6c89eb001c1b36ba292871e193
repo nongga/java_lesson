@@ -1,0 +1,31 @@
+package koreait.day13a;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class C55_ListTest {
+//sort 와 관련된 인터페이스 사용.
+	public static void main(String[] args) {
+		//List는 인터페이스, ArrayList는 구현체
+		//다형성 : List를 참조타입으로 하여 선언합니다. 앞으로 배울 라이브러리들이 List타입으로 원합니다.
+		
+		List<Integer> ilist = new ArrayList<>();
+		List<String> slist = new ArrayList<>();
+		
+		ilist.add(34);
+		ilist.add(58);
+		ilist.add(73);
+		ilist.add(38);
+		ilist.add(29);
+		ilist.add(96);
+		System.out.println("sort 이전 : " + ilist);
+		//정렬 : 오름차순
+		ilist.sort(null); 	//인자로 필요한것은 비교자 Comparator구현체 필요합니다.
+							//기본형,String은 null로 할수 있습니다.(오름차순 기본)
+		System.out.println("sort 이후 : " + ilist);
+
+		
+
+	}
+
+}

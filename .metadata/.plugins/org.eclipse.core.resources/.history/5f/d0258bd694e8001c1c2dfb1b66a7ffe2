@@ -1,0 +1,16 @@
+package koreait.day11;
+
+public class DateTimeTest {
+
+	public static void main(String[] args) {
+		//현재시간 : ms,ns(1970년 1월 1일 자정을 기준으로 단위마다 카운트한 값입니다.)
+
+		//1일,1년은 각각 몇 ms일까요? 1초=1000ms(1ms=0.001초)
+		//1일 = 24시간*60분*60초*1000 => result 변수에 저장해 보세요.
+		int result = 24*60*60*1000;
+		System.out.println("1일은 "+ result + "ms 입니다.");
+		System.out.println("1년은 "+ result*365L + "ms 입니다.");
+
+	}
+
+}

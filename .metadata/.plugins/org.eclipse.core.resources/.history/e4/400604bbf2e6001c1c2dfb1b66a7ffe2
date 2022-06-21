@@ -1,0 +1,18 @@
+package koreait.day09a;
+
+public class ClassAA extends ClassA {	//super(부모) 클래스는 ClassA
+
+}
+//파일이 별도로 만들어서 테스트할수도 있습니다. 단, public 클래스는 같은 파일에서 1개만.
+class Test{ 
+	public static void main(String[] args) {
+		ClassAA test1 = new ClassAA();
+		test1.ab =123;		//test1이 참조하는 객체가 상속받은 필드
+		test1.name="hong";	//상속받은 필드
+		
+		test1.print();
+		
+		
+	}
+	
+}

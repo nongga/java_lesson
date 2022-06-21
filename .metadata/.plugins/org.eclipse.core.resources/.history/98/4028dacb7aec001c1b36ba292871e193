@@ -1,0 +1,13 @@
+package koreait.test2;
+
+public class Bike extends Product {
+	
+	@Override
+	public String sell(Object obj) {
+		// TODO Auto-generated method stub
+		return String.format("추가 할인행사 - %d %%인하", obj);
+	}
+	
+	
+
+}

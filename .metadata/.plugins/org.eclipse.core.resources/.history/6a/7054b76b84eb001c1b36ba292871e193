@@ -1,0 +1,18 @@
+package koreait.day13a;
+
+public class C54_CompareTo {
+
+	public static void main(String[] args) {
+//모든 객체(Object 상속)에는 compareTo 메소드가 있습니다.	:값의 비교
+		
+		String na = "kim";
+		String you = "momo";
+		String he = "Son";
+		
+		System.out.println(na.compareTo(you));
+		System.out.println(na.compareTo(he));
+		
+
+	}
+
+}

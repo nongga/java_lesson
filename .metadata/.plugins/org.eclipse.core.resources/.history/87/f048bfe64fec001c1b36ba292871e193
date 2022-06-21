@@ -1,0 +1,17 @@
+package koreait.test;
+
+public abstract class Bike extends Product{
+	
+	private int speed;
+	
+	public void bike() {
+		this.prdName = "bike";
+	}
+	
+	@Override
+	public String sell() {
+
+		return null;
+	}
+	
+}

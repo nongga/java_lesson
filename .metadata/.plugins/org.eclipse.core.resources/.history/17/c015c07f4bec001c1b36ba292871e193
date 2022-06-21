@@ -1,0 +1,8 @@
+package koreait.test;
+
+public class Product {
+
+	protected String prdName;
+
+	public abstract String sell();
+}

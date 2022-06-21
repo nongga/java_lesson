@@ -1,0 +1,37 @@
+package koreait.day17;
+
+import java.util.StringTokenizer;
+
+public class C71_StringTokenizer {
+//token :  표식(최소단위)
+	public static void main(String[] args) {
+		
+		String temp = "모모 90 88 79";
+		
+		//토큰화 : StringTokenizer 클래스의 기능 사용
+		StringTokenizer stk = new StringTokenizer(temp);
+		System.out.println("1.nextToken 메소드");
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+		System.out.println(stk.nextToken());
+		System.out.println("hasMoreTokens? " +stk.hasMoreTokens());
+		
+		//"모모 90 88 79"
+		//⬆️(토크나이저의 포인터,nextToken 메소드 후 위치 이동)
+			
+		System.out.println("2. 반복문에서 hasMoreTokens 메소드");
+		stk = new StringTokenizer(temp);	//토크나이저 객체 다시 생성
+		while(stk.hasMoreTokens()) {		//다음에 읽어올 토큰이 있으면
+			System.out.println(stk.nextToken());
+		}
+		System.out.println("3. 여러가지 구분기호 사용하기");
+		temp = "모모,,90 88()79";
+		stk = new StringTokenizer(temp, " ,()");	//두번째 인자는 delim : 구분기호 문자를 나열합니다.(정규식 아닙니다.)
+		while(stk.hasMoreTokens()) {
+			System.out.println(stk.nextToken());
+		}
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package koreait.day10;
+
+import koreait.day09a.Animal;
+import koreait.day09a.Crow;
+import koreait.day09a.Dog;
+
+public class AnimalTest3 extends Animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Animal[] animals = new Animal[10];
+		
+		animals[0] = new Frog();
+		animals[1] = new Cat();
+		animals[5] = new Dog();
+		animals[7] = new Frog();
+		animals[8] = new Crow();
+		
+		for(Animal temp : animals) {	//배열에서 순서대로 하나씩 꺼내오기
+			if(temp !=null)
+			temp.act();
+			temp.print();
+		}
+
+	}
+
+}
